@@ -1,0 +1,85 @@
+/* USAMA NEW CSS START*/
+.home-page-services {
+  margin-top: 120px;
+}
+
+.services-wrapper {
+  margin-top: 40px;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.services__item {
+  width: 31%;
+  margin: 5px 0px;
+  margin-bottom: 30px;
+  padding: 20px 24px 24px;
+  background-color: #f8f8f9;
+  border-radius: 10px;
+  font-size: 1rem;
+  line-height: 1.63;
+  transition: box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.services__item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.services__number {
+  color: #0045e6;
+  font-weight: 600;
+  line-height: 2.5;
+  margin-bottom: 16px;
+}
+
+.services__content {
+  margin-bottom: 12px;
+}
+
+.services__link {
+  margin-left: auto;
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  color: #0045e6;
+  font-size: 0.875rem;
+  font-weight: 600;
+  line-height: 1.57;
+}
+.services__link-text {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+.services__item:hover .services__link-text {
+  opacity: 1;
+}
+
+.services__link-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  fill: #c9cede;
+  transition: fill 300ms;
+}
+
+.services__item:hover .services__link-icon {
+  fill: #0045e6;
+}
+
+.services__item:not(:hover) .services__link-icon {
+  opacity: 1;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/* USAMA NEW CSS END*/
