@@ -860,7 +860,7 @@ textarea {
 }
 
 .arrow-button.right {
-  right: 5px;
+  right: 4%;
 }
 
 /* Name */
@@ -885,10 +885,7 @@ textarea {
   .hatza-container {
     height: auto;
   }
-  /* 
-  .slide {
-    flex: 0 0 100%;
-  } */
+
   .slide {
     max-width: 1135px;
     width: 100%;
@@ -900,7 +897,4 @@ textarea {
     display: flex;
     padding: 30px;
   }
-}
-.c {
-  background: #fff6fa !important;
 }
