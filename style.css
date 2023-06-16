@@ -282,7 +282,7 @@ textarea {
 
 .hatzs-file-attachment img {
   background-color: white;
-  padding: 5px 13px;
+  padding: 5px 16px;
   border-radius: 50%;
 }
 .hatzs-file-attachment {
@@ -512,13 +512,21 @@ textarea {
   .hatzs-swiper-section {
     display: none;
   }
+  .swiper-container {
+    height: 631px !important;
+  }
   .hatzs-contact-us {
     flex-wrap: wrap;
     padding: 0px 0px;
   }
-
+  .owc-content {
+    max-width: 400px;
+    margin-left: 20px;
+    width: 100%;
+  }
   .ow-card {
     flex-wrap: wrap;
+    justify-content: center;
   }
   .hatzs-contactus {
     flex-wrap: wrap !important;
@@ -793,6 +801,7 @@ textarea {
 }
 .ow-card {
   display: flex;
+  padding: 70px;
 }
 .swiper-button-next {
   right: 10px;
@@ -801,6 +810,97 @@ textarea {
 .owc-content {
   text-align: justify;
 }
-.haaving {
-  padding-top: 40px;
+
+/* Hatza container */
+.hatza-container {
+  position: relative;
+  width: 100%;
+  max-width: 1100px; /* Updated maximum width to 1100px */
+  height: auto;
+  /* border: 1px solid #ccc; */
+  overflow: hidden;
+}
+
+/* Hatza slider */
+.hatza-slider {
+  display: flex;
+  width: 1200%; /* Width of hatza slider = number of slides * 100% */
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Individual slide */
+.slide {
+  max-width: 1135px;
+  width: 100%;
+  background: aliceblue;
+}
+
+/* Arrow buttons */
+.arrow-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+
+  width: 60px;
+  height: 60px;
+
+  background: #30b795 !important;
+  top: calc(72% - 40px);
+}
+
+.arrow-button.left {
+  left: 5px;
+}
+
+.arrow-button.right {
+  right: 5px;
+}
+
+/* Name */
+.name {
+  text-align: center;
+  font-size: 18px;
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 1100px) {
+  .hatza-container {
+    max-width: 100%; /* Adjusted to take full width on smaller screens */
+  }
+}
+@media screen and (max-width: 1200px) {
+  .hatza-container {
+    max-width: 100%; /* Adjusted to take full width on smaller screens */
+  }
+}
+@media screen and (max-width: 600px) {
+  .hatza-container {
+    height: auto;
+  }
+  /* 
+  .slide {
+    flex: 0 0 100%;
+  } */
+  .slide {
+    max-width: 1135px;
+    width: 100%;
+    background: aliceblue;
+  }
+}
+@media screen and (max-width: 600px) {
+  .ow-card {
+    display: flex;
+    padding: 30px;
+  }
+}
+.c {
+  background: #fff6fa !important;
 }
